@@ -10,15 +10,27 @@ ApplicationWindow {
     height: 800
     visible: true
     title: "LOLChamp"
-    color: "#1e1e1e"  // фон окна (тёмный)
 
     // === Настройка Material-стиля ===
-    Material.theme: Material.Dark
-    Material.accent: Material.Blue
-    Material.primary: Material.Teal    
+    background: Rectangle {
+            color: "#141414"
+            border.color: "#333"
+        }
+    
+    
+    // === Контентная область ===
+
+    StackView {
+        id: stackView
+        anchors.bottom: parent.bottom
+        anchors.top: parent.top
+        anchors.right: parent.right
+        anchors.left: leftPanel.right
+        initialItem: "pages/HomePage.qml"
+        }
 
     // === Левая панель (иконки) ===
-    header: Frame {
+    Frame {
         id: leftPanel
         width: 50
         padding: 0
@@ -71,14 +83,18 @@ ApplicationWindow {
                 Layout.preferredWidth: 40
                 Layout.fillWidth: false
             }
+
+            // Настройки
+            IconButton {
+                iconSource: "qrc:/icons/shutdown.svg"
+                onClicked: Qt.quit()
+                Layout.alignment: Qt.AlignHCenter
+                Layout.preferredHeight: 40
+                Layout.preferredWidth: 40
+                Layout.fillWidth: false
+            }
         }
     }
+       
     
-    // === Контентная область ===
-    StackView {
-        id: stackView
-        height: parent.height
-        anchors.fill: parent
-        initialItem: "pages/HomePage.qml"
-    }
 }

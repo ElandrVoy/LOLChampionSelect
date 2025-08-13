@@ -2,12 +2,14 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 
-Item {
+Page {
     id: settingsPage
-    anchors.fill: parent
 
+    background: Rectangle {
+        color: "transparent"
+    }
     Column {
-        anchors.fill: parent
+        anchors.centerIn: parent
         spacing: 20
 
         Text {

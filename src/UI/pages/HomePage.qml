@@ -5,23 +5,16 @@ import QtQuick.Controls 2.15
 
 Page {
     id: homePage
-    property string pageTitle: "Страница"
-    
-    Component.onCompleted: {
-        console.log("HomePage loaded, size:", width, "x", height)
-    }
 
-    Rectangle {
-        anchors.fill: parent
-        color: "red"
-        radius: 8
+    background: Rectangle {
+        color: "transparent"
     }
 
     Text {
-        anchors.centerIn: parent
-        text: "TEST"
-        color: "white"
+        text: "AOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOAAOA"
+        color: "#fd0d31"
         font.bold: true
         font.pointSize: 18
+        anchors.centerIn: parent
     }
 }
