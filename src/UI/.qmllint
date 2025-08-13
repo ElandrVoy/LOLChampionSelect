@@ -1,0 +1,6 @@
+{
+  "importPaths": [
+    "./",
+    "../env/Lib/site-packages/PySide6/qml" 
+  ]
+}

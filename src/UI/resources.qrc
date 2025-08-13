@@ -1,0 +1,7 @@
+<RCC>
+    <qresource>
+        <file>icons/home.svg</file>
+        <file>icons/settings.svg</file>
+        <file>icons/placeholder.svg</file>
+    </qresource>
+</RCC>
