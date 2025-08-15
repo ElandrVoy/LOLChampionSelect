@@ -4,5 +4,9 @@
         <file>icons/settings.svg</file>
         <file>icons/placeholder.svg</file>
         <file>icons/shutdown.svg</file>
+        <file>icons/search.svg</file>
+    </qresource>
+    <qresource>
+        <file>../resources/img/Aatrox.png</file>
     </qresource>
 </RCC>

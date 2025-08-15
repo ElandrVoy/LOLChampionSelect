@@ -12,14 +12,14 @@ ApplicationWindow {
     title: "LOLChamp"
 
     // === Настройка Material-стиля ===
-    background: Rectangle {
-            color: "#141414"
-            border.color: "#333"
-        }
-    
-    
-    // === Контентная область ===
+    Material.background: "#181818"
+    Material.accent: "#153010"
+    Material.primary: "#166d07"
 
+    font.family: "Open Sans"
+    font.pixelSize: 14
+
+    // === Контентная область ===
     StackView {
         id: stackView
         anchors.bottom: parent.bottom
@@ -40,7 +40,7 @@ ApplicationWindow {
         anchors.top: parent.top
 
         background: Rectangle {
-            color: "#181818"
+            color: "#1b1b1b"
             border.color: "#333"
         }
 
