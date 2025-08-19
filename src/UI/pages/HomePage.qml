@@ -10,6 +10,118 @@ Page {
     Material.background: "#141414"
     Material.accent: "#7c7c7c"
     
+    //Champions grid
+    Item {
+        id: searchResult
+        anchors {
+            left:  championPanel.right
+            top: searchPanel.bottom
+            right: parent.right
+            bottom: parent.bottom
+        }
+
+        Flickable {
+            readonly property real calcContentHeight: {
+                return Math.ceil(gridChampions.ids.length / gridChampions.calcColumns) * 120 * 1.1
+            }
+            id: flick
+            anchors.fill: parent
+            width: parent.width
+            height: parent.height
+            contentWidth: parent.width
+            contentHeight: calcContentHeight
+            boundsBehavior: Flickable.StopAtBounds
+            bottomMargin: 20
+
+            Frame {
+                width: parent.width
+                height: parent.calcContentHeight
+                background: Rectangle {
+                    color: "transparent"
+                    border.color: "red"
+                    border.width: 0  // Убедитесь, что граница отключена
+                }
+
+                Grid {
+                    id: gridChampions
+                    // anchors.fill: parent
+                    width: parent.width
+                    height: parent.height
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    property real minWidth: 120
+        
+                    readonly property int calcColumns: {
+                        var itemsInRow = width / (minWidth)
+                        return Math.max(1, Math.floor(itemsInRow))
+                    }
+                    
+                    columns: calcColumns
+                    // spacing: 0
+                    // padding: 0
+                    leftPadding: ((width - (minWidth * calcColumns)) / 2) - vbar.width
+                    property var ids: searchField.searchResultList
+                    property var names: []
+                    Repeater {
+                        id: rep
+                        model: gridChampions.ids.length                
+
+                        Frame {
+                            width: 120
+                            height: width * 1.1
+                            id: gridChampionsFrame
+                            background: Rectangle {
+                                color: "transparent"
+                                border.width: 0  // Убедитесь, что граница отключена
+                            }
+
+                            required property int index
+                            property string imageName: gridChampions.ids[index]
+                                
+                            ColumnLayout {
+                                anchors.fill: parent
+                                spacing: 0
+
+                                Image {
+                                source: "../../resources/img/" + gridChampionsFrame.imageName + ".png"
+                                horizontalAlignment: Qt.AlignHCenter
+                                Layout.preferredHeight: 100
+                                Layout.preferredWidth: 100
+                                }
+                                
+                                Text {
+
+                                    text: gridChampionsFrame.imageName
+                                    color: Material.accent
+                                    horizontalAlignment: Text.AlignHCenter
+                                    Layout.fillWidth: true
+                                    font.pixelSize: 17
+                                    minimumPixelSize: 10
+                                }
+                            }
+                        }  
+                    }
+                }
+            }
+            
+
+            ScrollBar.vertical: ScrollBar {
+                id: vbar
+                policy: ScrollBar.AsNeeded // Автоматическое появление
+                width: 10
+                
+                contentItem: Rectangle {
+                    color: vbar.pressed ? "#606060" : "#808080"
+                    radius: width/2
+        
+                    // Анимация при наведении
+                    opacity: vbar.hovered ? 0.8 : 0.5
+                    Behavior on opacity { NumberAnimation { duration: 10 } }
+                }
+            }
+        }
+    }
+
+    //searchTab
     Frame {
         id: searchPanel
         height: 50
@@ -41,11 +153,12 @@ Page {
                 bottomPadding: topPadding
                 leftPadding: 30
                 color: "#d3d3d3"
+                property list<string> searchResultList: search.id("")
                 
                 background: Rectangle {
-                color: "#292929"
-                border.color: "#444343"
-                radius: 5
+                    color: "#292929"
+                    border.color: "#444343"
+                    radius: 5
                 }
 
                 Image {
@@ -61,11 +174,11 @@ Page {
                     height: 20
                     opacity: 0.6
                 }
-                
+                onTextChanged: {
+                    searchResultList = search.id(text)
+                }
                 onAccepted: {
-                    console.log("Поиск:", text)
                     focus = false
-                    // Ваш код поиска
                 }
             }
 
@@ -79,71 +192,8 @@ Page {
         
         }
     }
-    
-    Frame {
-        id: searchResult
-        anchors {
-            left:  championPanel.right
-            top: searchPanel.bottom
-            right: parent.right
-            bottom: parent.bottom
-        }
-        spacing: 0
-        padding: 0
 
-        Grid {
-            id: gridChampions
-            anchors.fill: parent
-            columns: 10
-            spacing: 0
-            padding: 0
-            property var items: ['Aatrox', 'Ahri', 'Akali', 'Akshan', 'Alistar', 'Ambessa', 'Amumu', 'Anivia', 'Annie', 'Aphelios', 'Ashe', 'AurelionSol', 'Aurora', 'Azir', 'Bard', 'Belveth', 'Blitzcrank', 'Brand', 'Braum', 'Briar', 'Caitlyn', 'Camille', 'Cassiopeia', 'Chogath', 'Corki', 'Darius', 'Diana', 'Draven', 'DrMundo', 'Ekko', 'Elise', 'Evelynn', 'Ezreal', 'Fiddlesticks', 'Fiora', 'Fizz', 'Galio', 'Gangplank', 'Garen', 'Gnar', 'Gragas', 'Graves', 'Gwen', 'Hecarim', 'Heimerdinger', 'Hwei', 'Illaoi', 'Irelia', 'Ivern', 'Janna', 'JarvanIV', 'Jax', 'Jayce', 'Jhin', 'Jinx', 'Kaisa', 'Kalista', 'Karma', 'Karthus', 'Kassadin', 'Katarina', 'Kayle', 'Kayn', 'Kennen', 'Khazix', 'Kindred', 'Kled', 'KogMaw', 'KSante', 'Leblanc', 'LeeSin', 'Leona', 'Lillia', 'Lissandra', 'Lucian', 'Lulu', 'Lux', 'Malphite', 'Malzahar', 'Maokai', 'MasterYi', 'Mel', 'Milio', 'MissFortune', 'MonkeyKing', 'Mordekaiser', 'Morgana', 'Naafiri', 'Nami', 'Nasus', 'Nautilus', 'Neeko', 'Nidalee', 'Nilah', 'Nocturne', 'Nunu', 'Olaf', 'Orianna', 'Ornn', 'Pantheon', 'Poppy', 'Pyke', 'Qiyana', 'Quinn', 'Rakan', 'Rammus', 'RekSai', 'Rell', 'Renata', 'Renekton', 'Rengar', 'Riven', 'Rumble', 'Ryze', 'Samira', 'Sejuani', 'Senna', 'Seraphine', 'Sett', 'Shaco', 'Shen', 'Shyvana', 'Singed', 'Sion', 'Sivir', 'Skarner', 'Smolder', 'Sona', 'Soraka', 'Swain', 'Sylas', 'Syndra', 'TahmKench', 'Taliyah', 'Talon', 'Taric', 'Teemo', 'Thresh', 'Tristana', 'Trundle', 'Tryndamere', 'TwistedFate', 'Twitch', 'Udyr', 'Urgot', 'Varus', 'Vayne', 'Veigar', 'Velkoz', 'Vex', 'Vi', 'Viego', 'Viktor', 'Vladimir', 'Volibear', 'Warwick', 'Xayah', 'Xerath', 'XinZhao', 'Yasuo', 'Yone', 'Yorick', 'Yunara', 'Yuumi', 'Zac', 'Zed', 'Zeri', 'Ziggs', 'Zilean', 'Zoe', 'Zyra']
-
-            Repeater {
-                id: repeater
-                model: gridChampions.items.length                
-
-                Frame {
-                    width: 120
-                    height: width * 1.1
-                    id: gridChampionsFrame
-                    background: Rectangle {
-                        color: "transparent"
-                        border.width: 0  // Убедитесь, что граница отключена
-                    }
-
-                    required property int index
-                    property string imageName: gridChampions.items[index]
-                        
-                    ColumnLayout {
-                        anchors.fill: parent
-                        spacing: 0
-
-                        Image {
-                        source: "../../resources/img/" + gridChampionsFrame.imageName + ".png"
-                        horizontalAlignment: Qt.AlignHCenter
-                        Layout.preferredHeight: 100
-                        Layout.preferredWidth: 100
-                        }
-                        
-                        Text {
-
-                            text: gridChampionsFrame.imageName
-                            color: Material.accent
-                            horizontalAlignment: Text.AlignHCenter
-                            Layout.fillWidth: true
-                            font.pixelSize: 17
-                            minimumPixelSize: 10
-                        }
-                    }
-                    
-                }
-                    
-            }
-        }
-
-    }
-
+    // Left pannel
     Frame {
         id: championPanel
         width: parent.width / 3

@@ -10,7 +10,7 @@ ApplicationWindow {
     height: 800
     visible: true
     title: "LOLChamp"
-
+    
     // === Настройка Material-стиля ===
     Material.background: "#181818"
     Material.accent: "#153010"
@@ -61,11 +61,13 @@ ApplicationWindow {
         
             // Другие иконки будут добавлены сюда
             IconButton {
+                
                 iconSource: "qrc:/icons/placeholder.svg"  // можно использовать SVG или PNG
                 Layout.alignment: Qt.AlignHCenter
                 Layout.preferredHeight: 40
                 Layout.preferredWidth: 40
                 Layout.fillWidth: false
+                onClicked: backend.say("123")
             }
 
             
@@ -84,7 +86,7 @@ ApplicationWindow {
                 Layout.fillWidth: false
             }
 
-            // Настройки
+            // Выход
             IconButton {
                 iconSource: "qrc:/icons/shutdown.svg"
                 onClicked: Qt.quit()
