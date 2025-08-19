@@ -10,6 +10,11 @@ class search(QObject):
         with open('data.yaml', "r") as  file:
             data = yaml.load(file)
         self._champ_list = list(data["champions"].keys())
+        self._names_dict = dict(data["champions"])
+
+    @Slot(str, result=str)
+    def name(self, string: str):
+        return self._names_dict[string]
 
     @Slot(str, result=list)
     def id(self, string: str):

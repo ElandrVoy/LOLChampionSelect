@@ -90,7 +90,7 @@ Page {
                                 
                                 Text {
 
-                                    text: gridChampionsFrame.imageName
+                                    text: search.name(gridChampionsFrame.imageName)
                                     color: Material.accent
                                     horizontalAlignment: Text.AlignHCenter
                                     Layout.fillWidth: true
