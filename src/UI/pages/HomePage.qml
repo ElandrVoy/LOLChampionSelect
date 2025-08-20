@@ -3,6 +3,7 @@ import QtQuick 2.15
 import QtQuick.Layouts
 import QtQuick.Controls 2.15
 import QtQuick.Controls.Material 2.15
+import "../components"
 
 Page {
     id: homePage
@@ -65,39 +66,8 @@ Page {
                         id: rep
                         model: gridChampions.ids.length                
 
-                        Frame {
-                            width: 120
-                            height: width * 1.1
-                            id: gridChampionsFrame
-                            background: Rectangle {
-                                color: "transparent"
-                                border.width: 0  // Убедитесь, что граница отключена
-                            }
-
-                            required property int index
-                            property string imageName: gridChampions.ids[index]
-                                
-                            ColumnLayout {
-                                anchors.fill: parent
-                                spacing: 0
-
-                                Image {
-                                source: "../../resources/img/" + gridChampionsFrame.imageName + ".png"
-                                horizontalAlignment: Qt.AlignHCenter
-                                Layout.preferredHeight: 100
-                                Layout.preferredWidth: 100
-                                }
-                                
-                                Text {
-
-                                    text: search.name(gridChampionsFrame.imageName)
-                                    color: Material.accent
-                                    horizontalAlignment: Text.AlignHCenter
-                                    Layout.fillWidth: true
-                                    font.pixelSize: 17
-                                    minimumPixelSize: 10
-                                }
-                            }
+                        ChampionItem {
+                            imageName: gridChampions.ids[index]
                         }  
                     }
                 }
@@ -153,7 +123,7 @@ Page {
                 bottomPadding: topPadding
                 leftPadding: 30
                 color: "#d3d3d3"
-                property list<string> searchResultList: search.id("")
+                property list<string> searchResultList: backend.id("")
                 
                 background: Rectangle {
                     color: "#292929"
@@ -175,7 +145,7 @@ Page {
                     opacity: 0.6
                 }
                 onTextChanged: {
-                    searchResultList = search.id(text)
+                    searchResultList = backend.id(text)
                 }
                 onAccepted: {
                     focus = false
