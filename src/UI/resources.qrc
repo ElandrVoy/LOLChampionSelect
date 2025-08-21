@@ -5,6 +5,7 @@
         <file>icons/placeholder.svg</file>
         <file>icons/shutdown.svg</file>
         <file>icons/search.svg</file>
+        <file>icons/filter1.svg</file>
     </qresource>
     <qresource>
         <file>../resources/img/Aatrox.png</file>

@@ -4,13 +4,12 @@ import QtQuick.Controls 2.15
 
 Item {
     id: iconButton
-    property string iconSource: ""
+    property string iconSource: "qrc:/icons/placeholder.svg"
     property string text: ""
     property bool checked: false
     width: 40
     height: 40
     signal clicked
-    // Цвет иконки: активная — зелёная, иначе — серая
     property color iconColor: iconButton.checked ? "#4CAF50" : "#e40707ff"
 
 
@@ -27,7 +26,7 @@ Item {
     Image {
         id: image
         source: iconButton.iconSource
-        sourceSize: Qt.size(32, 32)
+        sourceSize: Qt.size(iconButton.height / 4 * 3, iconButton.width / 4 * 3)
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         y: 0

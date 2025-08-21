@@ -62,8 +62,6 @@ ApplicationWindow {
         
             // Другие иконки будут добавлены сюда
             IconButton {
-                
-                iconSource: "qrc:/icons/placeholder.svg"  // можно использовать SVG или PNG
                 Layout.alignment: Qt.AlignHCenter
                 Layout.preferredHeight: 40
                 Layout.preferredWidth: 40

@@ -34,8 +34,6 @@ class local_data:
         with open('data.yaml', 'w') as file:
             yaml.dump(data, file)
 
-local_data.update_data()
-
 # dict1 = {}
 # s = server_data()
 # l1 = s.dd_actual_champion_names_list

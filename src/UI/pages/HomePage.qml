@@ -91,6 +91,66 @@ Page {
         }
     }
 
+    Rectangle {
+        id: filterPanel
+        width: 200
+        height: 40
+        color: "#141414"
+        border.color: "#252525"
+        bottomLeftRadius: 10
+        bottomRightRadius: 10
+        x: searchPanel.x + 310
+        y: isOpen ? 49 : 0
+        property bool isOpen: false
+        
+        Behavior on y {
+            NumberAnimation { duration: 300; easing.type: Easing.OutCubic }
+        }
+        
+        // Содержимое панели
+        Row {
+            anchors.centerIn: parent
+            IconButton {
+                id: topButton
+                smooth: true
+                width: 37
+                height: 37
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+            IconButton {
+                id: jgButton
+                smooth: true
+                width: 37
+                height: 37
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+            IconButton {
+                id: midButton
+                smooth: true
+                width: 37
+                height: 37
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+            IconButton {
+                id: adcButton
+                smooth: true
+                width: 37
+                height: 37
+                anchors.verticalCenter: parent.verticalCenter
+            }
+
+            IconButton {
+                id: supButton
+                smooth: true
+                width: 37
+                height: 37
+                anchors.verticalCenter: parent.verticalCenter
+            }
+        }
+    }
     //searchTab
     Frame {
         id: searchPanel
@@ -104,9 +164,8 @@ Page {
             border.color: "#252525"
         }
 
-        Grid {
+        Row {
             id: gridSearch
-            rows: 1
             anchors.fill: parent
             anchors.centerIn: parent
             spacing: 5
@@ -152,14 +211,15 @@ Page {
                 }
             }
 
-            Image {
-                source: "qrc:/icons/placeholder.svg"
-                sourceSize: Qt.size(32, 32)
+            IconButton {
+                iconSource: "qrc:/icons/filter1.svg"
+                id: filterButton
                 smooth: true
-                width: 28
-                height: 28
-            }
-        
+                width: 34
+                height: 34
+                anchors.verticalCenter: parent.verticalCenter
+                onClicked: { filterPanel.isOpen = !filterPanel.isOpen }
+            }        
         }
     }
 

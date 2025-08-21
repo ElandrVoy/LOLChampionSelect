@@ -17,8 +17,8 @@ Frame {
 
         color: gridChampionsFrame.isHovered ? "#6e6e6e" : "transparent"
         anchors.fill: parent
-        anchors.bottomMargin:-5
-        anchors.topMargin: 5
+        anchors.bottomMargin:-3
+        anchors.topMargin: 3
         anchors.leftMargin: textName.implicitWidth > 100 ? -5 : 3
         anchors.rightMargin: textName.implicitWidth > 100 ? -5 : 3
         border.width: 0

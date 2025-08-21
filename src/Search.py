@@ -9,7 +9,7 @@ class search(QObject):
         yaml = YAML()
         with open('data.yaml', "r") as  file:
             data = yaml.load(file)
-        self._champ_list = list(data["champions"].keys())
+        self._champ_list = self._full_list = list(data["champions"].keys())
         self._names_dict = dict(data["champions"])
 
     @Slot(str, result=str)
@@ -19,7 +19,7 @@ class search(QObject):
     @Slot(str, result=list)
     def id(self, string: str):
         if string == "":
-            return self._champ_list
+            return self._full_list
         result = []
         pattern = ".*" + ".*".join(list(string)) + ".*"
         for name in self._champ_list:
