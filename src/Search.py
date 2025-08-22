@@ -1,4 +1,4 @@
-from ruamel.yaml import YAML
+import json
 import re
 from PySide6.QtCore import QUrl, QObject, Signal, Slot
 
@@ -6,15 +6,14 @@ class search(QObject):
 
     def __init__(self):
         super().__init__()
-        yaml = YAML()
-        with open('data.yaml', "r") as  file:
-            data = yaml.load(file)
+        with open('data.json', "r") as  file:
+            data = json.load(file)
         self._champ_list = self._full_list = list(data["champions"].keys())
         self._names_dict = dict(data["champions"])
 
     @Slot(str, result=str)
     def name(self, string: str):
-        return self._names_dict[string]
+        return self._names_dict[string]["name"]
 
     @Slot(str, result=list)
     def id(self, string: str):
