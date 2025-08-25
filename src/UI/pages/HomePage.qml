@@ -10,7 +10,7 @@ Page {
     Material.primary: "#852525"
     Material.background: "#141414"
     Material.accent: "#7c7c7c"
-    
+
     //Champions grid
     Item {
         id: searchResult
@@ -62,13 +62,29 @@ Page {
                     leftPadding: ((width - (minWidth * calcColumns)) / 2) - vbar.width
                     property var ids: searchField.searchResultList
                     property var names: []
+
                     Repeater {
                         id: rep
                         model: gridChampions.ids.length                
 
                         ChampionItem {
                             imageName: gridChampions.ids[index]
-                        }  
+                            
+                            Component.onCompleted: {
+                                appearAnim.start();
+                            }
+                            
+                            ParallelAnimation {
+                                id: appearAnim
+                                NumberAnimation {
+                                    target: parent
+                                    property: "opacity"
+                                    from: 0; to: 1
+                                    duration: 600
+                                    easing.type: Easing.OutQuad
+                                }  
+                            }
+                        }
                     }
                 }
             }
@@ -90,7 +106,8 @@ Page {
             }
         }
     }
-
+    
+    //Filter panel
     Rectangle {
         id: filterPanel
         width: 200
@@ -106,16 +123,28 @@ Page {
         Behavior on y {
             NumberAnimation { duration: 300; easing.type: Easing.OutCubic }
         }
-        
-        // Содержимое панели
+
         Row {
+            id: filterPanelRow
             anchors.centerIn: parent
+
+            function clickHandler(role, state) {
+                state ? backend.del_filter(role) : backend.add_filter(role) 
+                state = !state
+                searchField.searchResultList = backend.id(searchField.text)
+                return state
+            }
+            
             IconButton {
                 id: topButton
                 smooth: true
                 width: 37
                 height: 37
+                opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+
+                onClicked: isPressed = filterPanelRow.clickHandler("top", isPressed)
             }
 
             IconButton {
@@ -123,7 +152,11 @@ Page {
                 smooth: true
                 width: 37
                 height: 37
+                opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+
+                onClicked: isPressed = filterPanelRow.clickHandler("jungle", isPressed)
             }
 
             IconButton {
@@ -131,7 +164,11 @@ Page {
                 smooth: true
                 width: 37
                 height: 37
+                opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+
+                onClicked: isPressed = filterPanelRow.clickHandler("mid", isPressed)
             }
 
             IconButton {
@@ -139,7 +176,11 @@ Page {
                 smooth: true
                 width: 37
                 height: 37
+                opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+
+                onClicked: isPressed = filterPanelRow.clickHandler("adc", isPressed)
             }
 
             IconButton {
@@ -147,10 +188,15 @@ Page {
                 smooth: true
                 width: 37
                 height: 37
+                opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+
+                onClicked: isPressed = filterPanelRow.clickHandler("sup", isPressed)
             }
         }
     }
+
     //searchTab
     Frame {
         id: searchPanel
@@ -178,7 +224,7 @@ Page {
                 font.family: "Comic Sans"
                 font.pixelSize: 16
                 verticalAlignment: TextInput.AlignVCenter
-                topPadding: (height - font.pixelSize) / 2 -2  // -2 для точной подгонки
+                topPadding: (height - font.pixelSize) / 2 -2
                 bottomPadding: topPadding
                 leftPadding: 30
                 color: "#d3d3d3"
@@ -239,5 +285,4 @@ Page {
             source: "../../resources/img/Aatrox_0.jpg"    
         }
     }
-    
 }
