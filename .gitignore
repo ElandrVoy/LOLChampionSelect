@@ -3,6 +3,7 @@
 img
 justTest.py
 src/UI/icons
+!src/UI/icons/placeholder.svg
 13.yaml
 src/UI/qmllint.ini
 *Backend.qml
