@@ -10,8 +10,6 @@ Item {
     width: 40
     height: 40
     signal clicked
-    property color iconColor: iconButton.checked ? "#4CAF50" : "#e40707ff"
-
 
     Rectangle {
         id: backgroundRect

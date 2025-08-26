@@ -73,7 +73,7 @@ Page {
                             Component.onCompleted: {
                                 appearAnim.start();
                             }
-                            
+
                             ParallelAnimation {
                                 id: appearAnim
                                 NumberAnimation {
@@ -82,6 +82,10 @@ Page {
                                     from: 0; to: 1
                                     duration: 600
                                     easing.type: Easing.OutQuad
+
+                                    Component.onCompleted: {
+                                        appearAnim.start();
+                                    }
                                 }  
                             }
                         }
@@ -110,13 +114,13 @@ Page {
     //Filter panel
     Rectangle {
         id: filterPanel
-        width: 200
+        width: 37 * 11 + 4
         height: 40
         color: "#141414"
         border.color: "#252525"
         bottomLeftRadius: 10
         bottomRightRadius: 10
-        x: searchPanel.x + 310
+        x: (parent.width * 2 / 3) - (width / 2)
         y: isOpen ? 49 : 0
         property bool isOpen: false
         
@@ -132,10 +136,12 @@ Page {
                 state ? backend.del_filter(role) : backend.add_filter(role) 
                 state = !state
                 searchField.searchResultList = backend.id(searchField.text)
+                filteredChamps.text = backend.get_number_of_sorted()
                 return state
             }
             
-            IconButton {
+            //Top
+            FilterButton {
                 id: topButton
                 smooth: true
                 width: 37
@@ -143,11 +149,12 @@ Page {
                 opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
                 property bool isPressed: false
-
-                onClicked: isPressed = filterPanelRow.clickHandler("top", isPressed)
+                tag: "Top"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)                
             }
 
-            IconButton {
+            //Jungle
+            FilterButton {
                 id: jgButton
                 smooth: true
                 width: 37
@@ -155,11 +162,12 @@ Page {
                 opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
                 property bool isPressed: false
-
-                onClicked: isPressed = filterPanelRow.clickHandler("jungle", isPressed)
+                tag: "Jungle"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
             }
 
-            IconButton {
+            //Mid
+            FilterButton {
                 id: midButton
                 smooth: true
                 width: 37
@@ -167,11 +175,12 @@ Page {
                 opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
                 property bool isPressed: false
-
-                onClicked: isPressed = filterPanelRow.clickHandler("mid", isPressed)
+                tag: "Mid"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
             }
-
-            IconButton {
+            
+            //Adc
+            FilterButton {
                 id: adcButton
                 smooth: true
                 width: 37
@@ -179,11 +188,12 @@ Page {
                 opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
                 property bool isPressed: false
-
-                onClicked: isPressed = filterPanelRow.clickHandler("adc", isPressed)
+                tag: "Adc"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
             }
 
-            IconButton {
+            //Support
+            FilterButton {
                 id: supButton
                 smooth: true
                 width: 37
@@ -191,8 +201,99 @@ Page {
                 opacity: isPressed ? 1 : 0.5
                 anchors.verticalCenter: parent.verticalCenter
                 property bool isPressed: false
+                tag: "Support"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
+            }
 
-                onClicked: isPressed = filterPanelRow.clickHandler("sup", isPressed)
+            //Mage
+            FilterButton {
+                id: mageButton
+                smooth: true
+                width: 37
+                height: 37
+                opacity: isPressed ? 1 : 0.5
+                anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+                tag: "Mage"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
+            }
+
+            //Assasin
+            FilterButton {
+                id: assasinButton
+                smooth: true
+                width: 37
+                height: 37
+                opacity: isPressed ? 1 : 0.5
+                anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+                tag: "Assasin"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
+            }
+
+            //Tank
+            FilterButton {
+                id: tankButton
+                smooth: true
+                width: 37
+                height: 37
+                opacity: isPressed ? 1 : 0.5
+                anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+                tag: "Tank"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
+            }
+
+            //Fighter
+            FilterButton {
+                id: fighterButton
+                smooth: true
+                width: 37
+                height: 37
+                opacity: isPressed ? 1 : 0.5
+                anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+                tag: "Fighter"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
+            }
+
+            //Marksman
+            FilterButton {
+                id: marksmanButton
+                smooth: true
+                width: 37
+                height: 37
+                opacity: isPressed ? 1 : 0.5
+                anchors.verticalCenter: parent.verticalCenter
+                property bool isPressed: false
+                tag: "Marksman"
+                onClicked: isPressed = filterPanelRow.clickHandler(tag, isPressed)
+            }
+
+            //Clear filters
+            FilterButton {
+                id: clearButton
+                smooth: true
+                width: 37
+                height: 37
+                anchors.verticalCenter: parent.verticalCenter
+                tag: "Clear filters"
+                onClicked: { 
+                    backend.del_filter("all")
+                    searchField.searchResultList = backend.id(searchField.text)
+                    filteredChamps.text = backend.get_number_of_sorted()
+                    topButton.isPressed = false
+                    midButton.isPressed = false
+                    adcButton.isPressed = false
+                    supButton.isPressed = false
+                    jgButton.isPressed = false
+                    mageButton.isPressed = false
+                    tankButton.isPressed = false
+                    fighterButton.isPressed = false
+                    marksmanButton.isPressed = false
+                    assasinButton.isPressed = false
+
+                }
             }
         }
     }
@@ -219,7 +320,7 @@ Page {
 
             TextField {
                 id: searchField
-                width: 300
+                width: 280
                 height: 28
                 font.family: "Comic Sans"
                 font.pixelSize: 16
@@ -249,9 +350,27 @@ Page {
                     height: 20
                     opacity: 0.6
                 }
+
+                Text {
+                    id: filteredChamps
+                    width: 50
+                    text: backend.get_number_of_sorted()
+                    color: "#d6d6d6"
+                    anchors {
+                        left: parent.right
+                        leftMargin: -58
+                        verticalCenter: parent.verticalCenter
+                    }
+                    horizontalAlignment: Text.AlignRight
+                    font.pixelSize: 12
+                    minimumPixelSize: 10
+                }
+
                 onTextChanged: {
                     searchResultList = backend.id(text)
+                    filteredChamps.text = backend.get_number_of_sorted()
                 }
+
                 onAccepted: {
                     focus = false
                 }
@@ -265,8 +384,28 @@ Page {
                 height: 34
                 anchors.verticalCenter: parent.verticalCenter
                 onClicked: { filterPanel.isOpen = !filterPanel.isOpen }
-            }        
+            }
         }
+
+        Rectangle{
+            id: randomButtonBase
+            smooth: true
+            width: 68
+            color: "#058800"
+            height: 34
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.right: parent.right
+            radius: height / 2
+
+            IconButton {
+            id: randomButton
+            smooth: true
+            width: 34
+            height: 34
+            anchors.centerIn: parent
+            }
+        }
+        
     }
 
     // Left pannel

@@ -6,11 +6,9 @@
             "key": "266",
             "name": "Aatrox",
             "partype": "Blood Well",
-            "position": [
-                "Top"
-            ],
             "tags": [
-                "Fighter"
+                "Fighter",
+                "Top"
             ],
             "title": "the Darkin Blade"
         },
@@ -20,12 +18,10 @@
             "key": "103",
             "name": "Ahri",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Assassin"
+                "Assassin",
+                "Mid"
             ],
             "title": "the Nine-Tailed Fox"
         },
@@ -35,12 +31,10 @@
             "key": "84",
             "name": "Akali",
             "partype": "Energy",
-            "position": [
+            "tags": [
+                "Assassin",
                 "Top",
                 "Mid"
-            ],
-            "tags": [
-                "Assassin"
             ],
             "title": "the Rogue Assassin"
         },
@@ -50,12 +44,10 @@
             "key": "166",
             "name": "Akshan",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Marksman",
-                "Assassin"
+                "Assassin",
+                "Mid"
             ],
             "title": "the Rogue Sentinel"
         },
@@ -65,9 +57,6 @@
             "key": "12",
             "name": "Alistar",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Tank",
                 "Support"
@@ -80,12 +69,10 @@
             "key": "799",
             "name": "Ambessa",
             "partype": "Energy",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Mid"
             ],
             "title": "Matriarch of War"
         },
@@ -95,13 +82,10 @@
             "key": "32",
             "name": "Amumu",
             "partype": "Mana",
-            "position": [
-                "Jungle",
-                "Support"
-            ],
             "tags": [
                 "Tank",
-                "Support"
+                "Support",
+                "Jungle"
             ],
             "title": "the Sad Mummy"
         },
@@ -111,11 +95,9 @@
             "key": "34",
             "name": "Anivia",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Cryophoenix"
         },
@@ -125,12 +107,10 @@
             "key": "1",
             "name": "Annie",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Dark Child"
         },
@@ -140,11 +120,9 @@
             "key": "523",
             "name": "Aphelios",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Weapon of the Faithful"
         },
@@ -154,13 +132,10 @@
             "key": "22",
             "name": "Ashe",
             "partype": "Mana",
-            "position": [
-                "Adc",
-                "Support"
-            ],
             "tags": [
                 "Marksman",
-                "Support"
+                "Support",
+                "Adc"
             ],
             "title": "the Frost Archer"
         },
@@ -170,11 +145,9 @@
             "key": "136",
             "name": "Aurelion Sol",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "The Star Forger"
         },
@@ -184,13 +157,11 @@
             "key": "893",
             "name": "Aurora",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Assassin"
+                "Assassin",
+                "Top",
+                "Mid"
             ],
             "title": "the Witch Between Worlds"
         },
@@ -200,12 +171,10 @@
             "key": "268",
             "name": "Azir",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Marksman"
+                "Marksman",
+                "Mid"
             ],
             "title": "the Emperor of the Sands"
         },
@@ -215,9 +184,6 @@
             "key": "432",
             "name": "Bard",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -230,11 +196,9 @@
             "key": "200",
             "name": "Bel'Veth",
             "partype": "",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
-                "Fighter"
+                "Fighter",
+                "Jungle"
             ],
             "title": "the Empress of the Void"
         },
@@ -244,9 +208,6 @@
             "key": "53",
             "name": "Blitzcrank",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Tank",
                 "Support"
@@ -259,14 +220,11 @@
             "key": "63",
             "name": "Brand",
             "partype": "Mana",
-            "position": [
-                "Jungle",
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Jungle",
+                "Mid"
             ],
             "title": "the Burning Vengeance"
         },
@@ -276,9 +234,6 @@
             "key": "201",
             "name": "Braum",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Tank",
                 "Support"
@@ -291,12 +246,10 @@
             "key": "233",
             "name": "Briar",
             "partype": "Fury",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "the Restrained Hunger"
         },
@@ -306,11 +259,9 @@
             "key": "51",
             "name": "Caitlyn",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Sheriff of Piltover"
         },
@@ -320,13 +271,11 @@
             "key": "164",
             "name": "Camille",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Support"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Top",
+                "Support"
             ],
             "title": "the Steel Shadow"
         },
@@ -336,11 +285,9 @@
             "key": "69",
             "name": "Cassiopeia",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Serpent's Embrace"
         },
@@ -350,12 +297,10 @@
             "key": "31",
             "name": "Cho'Gath",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Tank",
-                "Mage"
+                "Mage",
+                "Top"
             ],
             "title": "the Terror of the Void"
         },
@@ -365,12 +310,10 @@
             "key": "42",
             "name": "Corki",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Marksman",
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Daring Bombardier"
         },
@@ -380,12 +323,10 @@
             "key": "122",
             "name": "Darius",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Hand of Noxus"
         },
@@ -395,13 +336,11 @@
             "key": "131",
             "name": "Diana",
             "partype": "Mana",
-            "position": [
-                "Jungle",
-                "Mid"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle",
+                "Mid"
             ],
             "title": "Scorn of the Moon"
         },
@@ -411,11 +350,9 @@
             "key": "119",
             "name": "Draven",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Glorious Executioner"
         },
@@ -425,12 +362,10 @@
             "key": "36",
             "name": "Dr. Mundo",
             "partype": "None",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Tank",
-                "Fighter"
+                "Fighter",
+                "Top"
             ],
             "title": "the Madman of Zaun"
         },
@@ -440,13 +375,11 @@
             "key": "245",
             "name": "Ekko",
             "partype": "Mana",
-            "position": [
-                "Jungle",
-                "Mid"
-            ],
             "tags": [
                 "Assassin",
-                "Mage"
+                "Mage",
+                "Jungle",
+                "Mid"
             ],
             "title": "the Boy Who Shattered Time"
         },
@@ -456,12 +389,10 @@
             "key": "60",
             "name": "Elise",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Assassin",
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "the Spider Queen"
         },
@@ -471,12 +402,10 @@
             "key": "28",
             "name": "Evelynn",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Assassin",
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "Agony's Embrace"
         },
@@ -486,12 +415,10 @@
             "key": "81",
             "name": "Ezreal",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Mage"
+                "Mage",
+                "Adc"
             ],
             "title": "the Prodigal Explorer"
         },
@@ -501,12 +428,10 @@
             "key": "9",
             "name": "Fiddlesticks",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Jungle"
             ],
             "title": "the Ancient Fear"
         },
@@ -516,12 +441,10 @@
             "key": "114",
             "name": "Fiora",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Top"
             ],
             "title": "the Grand Duelist"
         },
@@ -531,12 +454,10 @@
             "key": "105",
             "name": "Fizz",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Assassin",
-                "Fighter"
+                "Fighter",
+                "Mid"
             ],
             "title": "the Tidal Trickster"
         },
@@ -546,13 +467,11 @@
             "key": "3",
             "name": "Galio",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Tank",
-                "Mage"
+                "Mage",
+                "Mid",
+                "Support"
             ],
             "title": "the Colossus"
         },
@@ -562,11 +481,9 @@
             "key": "41",
             "name": "Gangplank",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
-                "Fighter"
+                "Fighter",
+                "Top"
             ],
             "title": "the Saltwater Scourge"
         },
@@ -576,12 +493,10 @@
             "key": "86",
             "name": "Garen",
             "partype": "None",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "The Might of Demacia"
         },
@@ -591,12 +506,10 @@
             "key": "150",
             "name": "Gnar",
             "partype": "Rage",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Missing Link"
         },
@@ -606,14 +519,12 @@
             "key": "79",
             "name": "Gragas",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Fighter",
+                "Mage",
                 "Top",
                 "Jungle",
                 "Mid"
-            ],
-            "tags": [
-                "Fighter",
-                "Mage"
             ],
             "title": "the Rabble Rouser"
         },
@@ -623,11 +534,9 @@
             "key": "104",
             "name": "Graves",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Jungle"
             ],
             "title": "the Outlaw"
         },
@@ -637,11 +546,9 @@
             "key": "887",
             "name": "Gwen",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
-                "Fighter"
+                "Fighter",
+                "Top"
             ],
             "title": "The Hallowed Seamstress"
         },
@@ -651,12 +558,10 @@
             "key": "120",
             "name": "Hecarim",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Jungle"
             ],
             "title": "the Shadow of War"
         },
@@ -666,14 +571,11 @@
             "key": "74",
             "name": "Heimerdinger",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Top",
+                "Mid"
             ],
             "title": "the Revered Inventor"
         },
@@ -683,13 +585,10 @@
             "key": "910",
             "name": "Hwei",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Visionary"
         },
@@ -699,12 +598,10 @@
             "key": "420",
             "name": "Illaoi",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Kraken Priestess"
         },
@@ -714,13 +611,11 @@
             "key": "39",
             "name": "Irelia",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Mid"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Top",
+                "Mid"
             ],
             "title": "the Blade Dancer"
         },
@@ -730,12 +625,10 @@
             "key": "427",
             "name": "Ivern",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Support",
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "the Green Father"
         },
@@ -745,9 +638,6 @@
             "key": "40",
             "name": "Janna",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -760,12 +650,10 @@
             "key": "59",
             "name": "Jarvan IV",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Jungle"
             ],
             "title": "the Exemplar of Demacia"
         },
@@ -775,12 +663,10 @@
             "key": "24",
             "name": "Jax",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Fighter",
                 "Top",
                 "Jungle"
-            ],
-            "tags": [
-                "Fighter"
             ],
             "title": "Grandmaster at Arms"
         },
@@ -790,13 +676,11 @@
             "key": "126",
             "name": "Jayce",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Mid"
-            ],
             "tags": [
                 "Fighter",
-                "Marksman"
+                "Marksman",
+                "Top",
+                "Mid"
             ],
             "title": "the Defender of Tomorrow"
         },
@@ -806,12 +690,10 @@
             "key": "202",
             "name": "Jhin",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Mage"
+                "Mage",
+                "Adc"
             ],
             "title": "the Virtuoso"
         },
@@ -821,11 +703,9 @@
             "key": "222",
             "name": "Jinx",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Loose Cannon"
         },
@@ -835,12 +715,10 @@
             "key": "145",
             "name": "Kai'Sa",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Mage"
+                "Mage",
+                "Adc"
             ],
             "title": "Daughter of the Void"
         },
@@ -850,11 +728,9 @@
             "key": "429",
             "name": "Kalista",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Spear of Vengeance"
         },
@@ -864,14 +740,11 @@
             "key": "43",
             "name": "Karma",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Top",
+                "Mid"
             ],
             "title": "the Enlightened One"
         },
@@ -881,11 +754,9 @@
             "key": "30",
             "name": "Karthus",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "the Deathsinger"
         },
@@ -895,12 +766,10 @@
             "key": "38",
             "name": "Kassadin",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Assassin",
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Void Walker"
         },
@@ -910,12 +779,10 @@
             "key": "55",
             "name": "Katarina",
             "partype": "None",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Assassin",
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Sinister Blade"
         },
@@ -925,12 +792,10 @@
             "key": "10",
             "name": "Kayle",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Mage",
-                "Marksman"
+                "Marksman",
+                "Top"
             ],
             "title": "the Righteous"
         },
@@ -940,12 +805,10 @@
             "key": "141",
             "name": "Kayn",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "the Shadow Reaper"
         },
@@ -955,11 +818,9 @@
             "key": "85",
             "name": "Kennen",
             "partype": "Energy",
-            "position": [
-                "Top"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Top"
             ],
             "title": "the Heart of the Tempest"
         },
@@ -969,11 +830,9 @@
             "key": "121",
             "name": "Kha'Zix",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "the Voidreaver"
         },
@@ -983,11 +842,9 @@
             "key": "203",
             "name": "Kindred",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Jungle"
             ],
             "title": "The Eternal Hunters"
         },
@@ -997,11 +854,9 @@
             "key": "240",
             "name": "Kled",
             "partype": "Courage",
-            "position": [
-                "Top"
-            ],
             "tags": [
-                "Fighter"
+                "Fighter",
+                "Top"
             ],
             "title": "the Cantankerous Cavalier"
         },
@@ -1011,12 +866,10 @@
             "key": "96",
             "name": "Kog'Maw",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Mage"
+                "Mage",
+                "Adc"
             ],
             "title": "the Mouth of the Abyss"
         },
@@ -1026,12 +879,10 @@
             "key": "897",
             "name": "K'Sante",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Tank",
-                "Fighter"
+                "Fighter",
+                "Top"
             ],
             "title": "the Pride of Nazumah"
         },
@@ -1041,12 +892,10 @@
             "key": "7",
             "name": "LeBlanc",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Assassin",
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Deceiver"
         },
@@ -1056,12 +905,10 @@
             "key": "64",
             "name": "Lee Sin",
             "partype": "Energy",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "the Blind Monk"
         },
@@ -1071,9 +918,6 @@
             "key": "89",
             "name": "Leona",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Tank",
                 "Support"
@@ -1086,12 +930,10 @@
             "key": "876",
             "name": "Lillia",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "the Bashful Bloom"
         },
@@ -1101,11 +943,9 @@
             "key": "127",
             "name": "Lissandra",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Ice Witch"
         },
@@ -1115,12 +955,10 @@
             "key": "236",
             "name": "Lucian",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Assassin"
+                "Assassin",
+                "Adc"
             ],
             "title": "the Purifier"
         },
@@ -1130,9 +968,6 @@
             "key": "117",
             "name": "Lulu",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -1145,13 +980,10 @@
             "key": "99",
             "name": "Lux",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Lady of Luminosity"
         },
@@ -1161,14 +993,12 @@
             "key": "54",
             "name": "Malphite",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Tank",
+                "Mage",
                 "Top",
                 "Mid",
                 "Support"
-            ],
-            "tags": [
-                "Tank",
-                "Mage"
             ],
             "title": "Shard of the Monolith"
         },
@@ -1178,11 +1008,9 @@
             "key": "90",
             "name": "Malzahar",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Prophet of the Void"
         },
@@ -1192,13 +1020,10 @@
             "key": "57",
             "name": "Maokai",
             "partype": "Mana",
-            "position": [
-                "Jungle",
-                "Support"
-            ],
             "tags": [
                 "Tank",
-                "Support"
+                "Support",
+                "Jungle"
             ],
             "title": "the Twisted Treant"
         },
@@ -1208,12 +1033,10 @@
             "key": "11",
             "name": "Master Yi",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "the Wuju Bladesman"
         },
@@ -1223,12 +1046,10 @@
             "key": "800",
             "name": "Mel",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Soul's Reflection"
         },
@@ -1238,9 +1059,6 @@
             "key": "902",
             "name": "Milio",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -1253,12 +1071,10 @@
             "key": "21",
             "name": "Miss Fortune",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Mage"
+                "Mage",
+                "Adc"
             ],
             "title": "the Bounty Hunter"
         },
@@ -1268,13 +1084,11 @@
             "key": "62",
             "name": "Wukong",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top",
+                "Jungle"
             ],
             "title": "the Monkey King"
         },
@@ -1284,12 +1098,10 @@
             "key": "82",
             "name": "Mordekaiser",
             "partype": "Shield",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Mage"
+                "Mage",
+                "Top"
             ],
             "title": "the Iron Revenant"
         },
@@ -1299,9 +1111,6 @@
             "key": "25",
             "name": "Morgana",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -1314,12 +1123,10 @@
             "key": "950",
             "name": "Naafiri",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Assassin",
-                "Fighter"
+                "Fighter",
+                "Mid"
             ],
             "title": "the Hound of a Hundred Bites"
         },
@@ -1329,9 +1136,6 @@
             "key": "267",
             "name": "Nami",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -1344,12 +1148,10 @@
             "key": "75",
             "name": "Nasus",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Curator of the Sands"
         },
@@ -1359,9 +1161,6 @@
             "key": "111",
             "name": "Nautilus",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Tank",
                 "Support"
@@ -1374,13 +1173,10 @@
             "key": "518",
             "name": "Neeko",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Curious Chameleon"
         },
@@ -1390,12 +1186,10 @@
             "key": "76",
             "name": "Nidalee",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Assassin",
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "the Bestial Huntress"
         },
@@ -1405,12 +1199,10 @@
             "key": "895",
             "name": "Nilah",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Adc"
             ],
             "title": "the Joy Unbound"
         },
@@ -1420,12 +1212,10 @@
             "key": "56",
             "name": "Nocturne",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "the Eternal Nightmare"
         },
@@ -1435,12 +1225,10 @@
             "key": "20",
             "name": "Nunu & Willump",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Tank",
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "the Boy and His Yeti"
         },
@@ -1450,12 +1238,10 @@
             "key": "2",
             "name": "Olaf",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Berserker"
         },
@@ -1465,12 +1251,10 @@
             "key": "61",
             "name": "Orianna",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Lady of Clockwork"
         },
@@ -1480,11 +1264,9 @@
             "key": "516",
             "name": "Ornn",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "The Fire below the Mountain"
         },
@@ -1494,15 +1276,13 @@
             "key": "80",
             "name": "Pantheon",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Fighter",
+                "Assassin",
                 "Top",
                 "Jungle",
                 "Mid",
                 "Support"
-            ],
-            "tags": [
-                "Fighter",
-                "Assassin"
             ],
             "title": "the Unbreakable Spear"
         },
@@ -1512,13 +1292,11 @@
             "key": "78",
             "name": "Poppy",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Tank",
-                "Fighter"
+                "Fighter",
+                "Top",
+                "Jungle"
             ],
             "title": "Keeper of the Hammer"
         },
@@ -1528,9 +1306,6 @@
             "key": "555",
             "name": "Pyke",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Assassin"
@@ -1543,11 +1318,9 @@
             "key": "246",
             "name": "Qiyana",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Assassin"
+                "Assassin",
+                "Mid"
             ],
             "title": "Empress of the Elements"
         },
@@ -1557,12 +1330,10 @@
             "key": "133",
             "name": "Quinn",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Marksman",
-                "Assassin"
+                "Assassin",
+                "Top"
             ],
             "title": "Demacia's Wings"
         },
@@ -1572,9 +1343,6 @@
             "key": "497",
             "name": "Rakan",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support"
             ],
@@ -1586,11 +1354,9 @@
             "key": "33",
             "name": "Rammus",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
-                "Tank"
+                "Tank",
+                "Jungle"
             ],
             "title": "the Armordillo"
         },
@@ -1600,12 +1366,10 @@
             "key": "421",
             "name": "Rek'Sai",
             "partype": "Rage",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Jungle"
             ],
             "title": "the Void Burrower"
         },
@@ -1615,9 +1379,6 @@
             "key": "526",
             "name": "Rell",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Tank",
                 "Support"
@@ -1630,9 +1391,6 @@
             "key": "888",
             "name": "Renata Glasc",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -1645,12 +1403,10 @@
             "key": "58",
             "name": "Renekton",
             "partype": "Fury",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Butcher of the Sands"
         },
@@ -1660,13 +1416,11 @@
             "key": "107",
             "name": "Rengar",
             "partype": "Ferocity",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Assassin",
-                "Fighter"
+                "Fighter",
+                "Top",
+                "Jungle"
             ],
             "title": "the Pridestalker"
         },
@@ -1676,12 +1430,10 @@
             "key": "92",
             "name": "Riven",
             "partype": "None",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Top"
             ],
             "title": "the Exile"
         },
@@ -1691,13 +1443,11 @@
             "key": "68",
             "name": "Rumble",
             "partype": "Heat",
-            "position": [
-                "Top",
-                "Mid"
-            ],
             "tags": [
                 "Fighter",
-                "Mage"
+                "Mage",
+                "Top",
+                "Mid"
             ],
             "title": "the Mechanized Menace"
         },
@@ -1707,11 +1457,9 @@
             "key": "13",
             "name": "Ryze",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Rune Mage"
         },
@@ -1721,12 +1469,10 @@
             "key": "360",
             "name": "Samira",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Assassin"
+                "Assassin",
+                "Adc"
             ],
             "title": "the Desert Rose"
         },
@@ -1736,11 +1482,9 @@
             "key": "113",
             "name": "Sejuani",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
-                "Tank"
+                "Tank",
+                "Jungle"
             ],
             "title": "Fury of the North"
         },
@@ -1750,13 +1494,10 @@
             "key": "235",
             "name": "Senna",
             "partype": "Mana",
-            "position": [
-                "Adc",
-                "Support"
-            ],
             "tags": [
                 "Support",
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Redeemer"
         },
@@ -1766,13 +1507,10 @@
             "key": "147",
             "name": "Seraphine",
             "partype": "Mana",
-            "position": [
-                "Adc",
-                "Support"
-            ],
             "tags": [
                 "Support",
-                "Mage"
+                "Mage",
+                "Adc"
             ],
             "title": "the Starry-Eyed Songstress"
         },
@@ -1782,12 +1520,10 @@
             "key": "875",
             "name": "Sett",
             "partype": "Grit",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Boss"
         },
@@ -1797,12 +1533,10 @@
             "key": "35",
             "name": "Shaco",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Assassin",
                 "Jungle",
                 "Support"
-            ],
-            "tags": [
-                "Assassin"
             ],
             "title": "the Demon Jester"
         },
@@ -1812,12 +1546,10 @@
             "key": "98",
             "name": "Shen",
             "partype": "Energy",
-            "position": [
+            "tags": [
+                "Tank",
                 "Top",
                 "Support"
-            ],
-            "tags": [
-                "Tank"
             ],
             "title": "the Eye of Twilight"
         },
@@ -1827,12 +1559,10 @@
             "key": "102",
             "name": "Shyvana",
             "partype": "Fury",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Mage"
+                "Mage",
+                "Jungle"
             ],
             "title": "the Half-Dragon"
         },
@@ -1842,12 +1572,10 @@
             "key": "27",
             "name": "Singed",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Tank",
-                "Mage"
+                "Mage",
+                "Top"
             ],
             "title": "the Mad Chemist"
         },
@@ -1857,12 +1585,10 @@
             "key": "14",
             "name": "Sion",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Tank",
-                "Fighter"
+                "Fighter",
+                "Top"
             ],
             "title": "The Undead Juggernaut"
         },
@@ -1872,11 +1598,9 @@
             "key": "15",
             "name": "Sivir",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Battle Mistress"
         },
@@ -1886,13 +1610,11 @@
             "key": "72",
             "name": "Skarner",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Tank",
-                "Fighter"
+                "Fighter",
+                "Top",
+                "Jungle"
             ],
             "title": "the Primordial Sovereign"
         },
@@ -1902,14 +1624,12 @@
             "key": "901",
             "name": "Smolder",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Marksman",
+                "Mage",
                 "Top",
                 "Mid",
                 "Adc"
-            ],
-            "tags": [
-                "Marksman",
-                "Mage"
             ],
             "title": "the Fiery Fledgling"
         },
@@ -1919,9 +1639,6 @@
             "key": "37",
             "name": "Sona",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -1934,9 +1651,6 @@
             "key": "16",
             "name": "Soraka",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -1949,13 +1663,10 @@
             "key": "50",
             "name": "Swain",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Noxian Grand General"
         },
@@ -1965,13 +1676,11 @@
             "key": "517",
             "name": "Sylas",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Assassin"
+                "Assassin",
+                "Top",
+                "Mid"
             ],
             "title": "the Unshackled"
         },
@@ -1981,11 +1690,9 @@
             "key": "134",
             "name": "Syndra",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Dark Sovereign"
         },
@@ -1995,13 +1702,10 @@
             "key": "223",
             "name": "Tahm Kench",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Support"
-            ],
             "tags": [
                 "Tank",
-                "Support"
+                "Support",
+                "Top"
             ],
             "title": "The River King"
         },
@@ -2011,13 +1715,11 @@
             "key": "163",
             "name": "Taliyah",
             "partype": "Mana",
-            "position": [
-                "Jungle",
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Jungle",
+                "Mid"
             ],
             "title": "the Stoneweaver"
         },
@@ -2027,12 +1729,10 @@
             "key": "91",
             "name": "Talon",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Assassin",
                 "Jungle",
                 "Mid"
-            ],
-            "tags": [
-                "Assassin"
             ],
             "title": "the Blade's Shadow"
         },
@@ -2042,13 +1742,10 @@
             "key": "44",
             "name": "Taric",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Support",
-                "Tank"
+                "Tank",
+                "Mid"
             ],
             "title": "the Shield of Valoran"
         },
@@ -2058,14 +1755,12 @@
             "key": "17",
             "name": "Teemo",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Marksman",
+                "Mage",
                 "Top",
                 "Jungle",
                 "Support"
-            ],
-            "tags": [
-                "Marksman",
-                "Mage"
             ],
             "title": "the Swift Scout"
         },
@@ -2075,9 +1770,6 @@
             "key": "412",
             "name": "Thresh",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Tank"
@@ -2090,13 +1782,11 @@
             "key": "18",
             "name": "Tristana",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Assassin"
+                "Assassin",
+                "Mid",
+                "Adc"
             ],
             "title": "the Yordle Gunner"
         },
@@ -2106,13 +1796,11 @@
             "key": "48",
             "name": "Trundle",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top",
+                "Jungle"
             ],
             "title": "the Troll King"
         },
@@ -2122,12 +1810,10 @@
             "key": "23",
             "name": "Tryndamere",
             "partype": "Fury",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Top"
             ],
             "title": "the Barbarian King"
         },
@@ -2137,14 +1823,12 @@
             "key": "4",
             "name": "Twisted Fate",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Mage",
+                "Marksman",
                 "Top",
                 "Mid",
                 "Adc"
-            ],
-            "tags": [
-                "Mage",
-                "Marksman"
             ],
             "title": "the Card Master"
         },
@@ -2154,13 +1838,11 @@
             "key": "29",
             "name": "Twitch",
             "partype": "Mana",
-            "position": [
-                "Adc",
-                "Support"
-            ],
             "tags": [
                 "Marksman",
-                "Assassin"
+                "Assassin",
+                "Adc",
+                "Support"
             ],
             "title": "the Plague Rat"
         },
@@ -2170,13 +1852,11 @@
             "key": "77",
             "name": "Udyr",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top",
+                "Jungle"
             ],
             "title": "the Spirit Walker"
         },
@@ -2186,12 +1866,10 @@
             "key": "6",
             "name": "Urgot",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "the Dreadnought"
         },
@@ -2201,12 +1879,10 @@
             "key": "110",
             "name": "Varus",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Mage"
+                "Mage",
+                "Adc"
             ],
             "title": "the Arrow of Retribution"
         },
@@ -2216,13 +1892,11 @@
             "key": "67",
             "name": "Vayne",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Adc"
-            ],
             "tags": [
                 "Marksman",
-                "Assassin"
+                "Assassin",
+                "Top",
+                "Adc"
             ],
             "title": "the Night Hunter"
         },
@@ -2232,12 +1906,10 @@
             "key": "45",
             "name": "Veigar",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Mage",
                 "Mid",
                 "Support"
-            ],
-            "tags": [
-                "Mage"
             ],
             "title": "the Tiny Master of Evil"
         },
@@ -2247,13 +1919,10 @@
             "key": "161",
             "name": "Vel'Koz",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Eye of the Void"
         },
@@ -2263,11 +1932,9 @@
             "key": "711",
             "name": "Vex",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Gloomist"
         },
@@ -2277,12 +1944,10 @@
             "key": "254",
             "name": "Vi",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "the Piltover Enforcer"
         },
@@ -2292,12 +1957,10 @@
             "key": "234",
             "name": "Viego",
             "partype": "None",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Jungle"
             ],
             "title": "The Ruined King"
         },
@@ -2307,11 +1970,9 @@
             "key": "112",
             "name": "Viktor",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Herald of the Arcane"
         },
@@ -2321,13 +1982,11 @@
             "key": "8",
             "name": "Vladimir",
             "partype": "Crimson Rush",
-            "position": [
-                "Top",
-                "Mid"
-            ],
             "tags": [
                 "Mage",
-                "Fighter"
+                "Fighter",
+                "Top",
+                "Mid"
             ],
             "title": "the Crimson Reaper"
         },
@@ -2337,13 +1996,11 @@
             "key": "106",
             "name": "Volibear",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top",
+                "Jungle"
             ],
             "title": "the Relentless Storm"
         },
@@ -2353,13 +2010,11 @@
             "key": "19",
             "name": "Warwick",
             "partype": "Mana",
-            "position": [
-                "Top",
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top",
+                "Jungle"
             ],
             "title": "the Uncaged Wrath of Zaun"
         },
@@ -2369,11 +2024,9 @@
             "key": "498",
             "name": "Xayah",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Rebel"
         },
@@ -2383,13 +2036,10 @@
             "key": "101",
             "name": "Xerath",
             "partype": "Mana",
-            "position": [
-                "Mid",
-                "Support"
-            ],
             "tags": [
                 "Mage",
-                "Support"
+                "Support",
+                "Mid"
             ],
             "title": "the Magus Ascendant"
         },
@@ -2399,12 +2049,10 @@
             "key": "5",
             "name": "Xin Zhao",
             "partype": "Mana",
-            "position": [
-                "Jungle"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Jungle"
             ],
             "title": "the Seneschal of Demacia"
         },
@@ -2414,14 +2062,12 @@
             "key": "157",
             "name": "Yasuo",
             "partype": "Flow",
-            "position": [
+            "tags": [
+                "Fighter",
+                "Assassin",
                 "Top",
                 "Mid",
                 "Adc"
-            ],
-            "tags": [
-                "Fighter",
-                "Assassin"
             ],
             "title": "the Unforgiven"
         },
@@ -2431,13 +2077,11 @@
             "key": "777",
             "name": "Yone",
             "partype": "Flow",
-            "position": [
-                "Top",
-                "Mid"
-            ],
             "tags": [
                 "Fighter",
-                "Assassin"
+                "Assassin",
+                "Top",
+                "Mid"
             ],
             "title": "the Unforgotten"
         },
@@ -2447,12 +2091,10 @@
             "key": "83",
             "name": "Yorick",
             "partype": "Mana",
-            "position": [
-                "Top"
-            ],
             "tags": [
                 "Fighter",
-                "Tank"
+                "Tank",
+                "Top"
             ],
             "title": "Shepherd of Souls"
         },
@@ -2462,11 +2104,9 @@
             "key": "804",
             "name": "Yunara",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "the Unbroken Faith"
         },
@@ -2476,9 +2116,6 @@
             "key": "350",
             "name": "Yuumi",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -2491,14 +2128,12 @@
             "key": "154",
             "name": "Zac",
             "partype": "None",
-            "position": [
+            "tags": [
+                "Tank",
+                "Fighter",
                 "Top",
                 "Jungle",
                 "Support"
-            ],
-            "tags": [
-                "Tank",
-                "Fighter"
             ],
             "title": "the Secret Weapon"
         },
@@ -2508,12 +2143,10 @@
             "key": "238",
             "name": "Zed",
             "partype": "Energy",
-            "position": [
+            "tags": [
+                "Assassin",
                 "Jungle",
                 "Mid"
-            ],
-            "tags": [
-                "Assassin"
             ],
             "title": "the Master of Shadows"
         },
@@ -2523,11 +2156,9 @@
             "key": "221",
             "name": "Zeri",
             "partype": "Mana",
-            "position": [
-                "Adc"
-            ],
             "tags": [
-                "Marksman"
+                "Marksman",
+                "Adc"
             ],
             "title": "The Spark of Zaun"
         },
@@ -2537,12 +2168,10 @@
             "key": "115",
             "name": "Ziggs",
             "partype": "Mana",
-            "position": [
+            "tags": [
+                "Mage",
                 "Mid",
                 "Adc"
-            ],
-            "tags": [
-                "Mage"
             ],
             "title": "the Hexplosives Expert"
         },
@@ -2552,9 +2181,6 @@
             "key": "26",
             "name": "Zilean",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Support",
                 "Mage"
@@ -2567,11 +2193,9 @@
             "key": "142",
             "name": "Zoe",
             "partype": "Mana",
-            "position": [
-                "Mid"
-            ],
             "tags": [
-                "Mage"
+                "Mage",
+                "Mid"
             ],
             "title": "the Aspect of Twilight"
         },
@@ -2581,9 +2205,6 @@
             "key": "143",
             "name": "Zyra",
             "partype": "Mana",
-            "position": [
-                "Support"
-            ],
             "tags": [
                 "Mage",
                 "Support"
