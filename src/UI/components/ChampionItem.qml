@@ -14,7 +14,6 @@ Frame {
     property bool isHovered: false
 
     background: Rectangle {
-
         color: gridChampionsFrame.isHovered ? "#6e6e6e" : "transparent"
         anchors.fill: parent
         anchors.bottomMargin:-3

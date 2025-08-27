@@ -1,4 +1,4 @@
-// pages/HomePage.qml
+// HomePage.qml
 import QtQuick 2.15
 import QtQuick.Layouts
 import QtQuick.Controls 2.15
@@ -398,14 +398,15 @@ Page {
             radius: height / 2
 
             IconButton {
-            id: randomButton
-            smooth: true
-            width: 34
-            height: 34
-            anchors.centerIn: parent
+                id: randomButton
+                smooth: true
+                width: 34
+                height: 34
+                anchors.centerIn: parent
+
+                onClicked: aboba.animateRandomSelection()
             }
         }
-        
     }
 
     // Left pannel
@@ -419,9 +420,26 @@ Page {
             border.color: "#252525"
         }
         
-        Image {
+        ColumnLayout {
             anchors.centerIn: parent
-            source: "../../resources/img/Aatrox_0.jpg"    
+            spacing: 20
+
+            RandomImageSelector {
+                id: aboba
+                Layout.alignment: Layout.Center
+                imageList: [
+                    "../../resources/img/Aatrox_0.jpg",
+                    "../../resources/img/Akali_0.jpg",
+                    "../../resources/img/Ahri_0.jpg",
+                    "../../resources/img/Brand_0.jpg"
+                ]
+            }
+
         }
+
+        // Image {
+        //     anchors.centerIn: parent
+        //     source: "../../resources/img/Aatrox_0.jpg"    
+        // }
     }
 }
