@@ -6,7 +6,7 @@ Item {
     width: 300
     height: 300
     
-    property var imageList: []
+    property var imageList: backend.get_filtered_paths()
     property string currentImage: ""
     property string nextImage: ""
     property int currentIndex: 0
@@ -33,16 +33,15 @@ Item {
         }
     }
 
-    function animateRandomSelection() {
+    function randomSelection() {
         var newIndex;
+        imageList = backend.get_filtered_paths()
         do {
             newIndex = Math.floor(Math.random() * imageList.length);
         } while (newIndex === currentIndex && imageList.length > 1);
-        
         // Устанавливаем новое изображение
         nextImage.source = imageList[newIndex];      
         slideAnimation.start();
-        console.info(imageList)
         currentIndex = newIndex;
     }
 

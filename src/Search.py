@@ -10,6 +10,7 @@ class search(QObject):
             file_data = json.load(file)
         self._champ_list = self._full_list = list(file_data["data"].keys())
         self.data = file_data
+        self.filtered_paths = []
         self.filters = []
         self.number_of_sorted = "171/171"
 
@@ -44,20 +45,31 @@ class search(QObject):
     def get_number_of_sorted(self):
         return self.number_of_sorted
     
+    @Slot(result=list)
+    def get_filtered_paths(self):
+        return self.filtered_paths
+        
     @Slot(str, result=str)
     def name(self, string: str):
         return self.data["data"][string]["name"]
 
     @Slot(str, result=list)
     def id(self, string: str):
-        if string == "":
-            self.number_of_sorted = f"{len(self.apply_filters(self._full_list, self.filters))}/171"
-            return self.apply_filters(self._full_list, self.filters)
         result = []
+        if string == "":
+            result = self.apply_filters(self._full_list, self.filters)
+            self.number_of_sorted = f"{len(result)}/171"
+            self.filtered_paths = result.copy()
+            for i in range(len(self.filtered_paths)):
+                self.filtered_paths[i] = f"../../resources/img/{self.filtered_paths[i]}_0.jpg"
+            return result
         pattern = ".*" + ".*".join(list(string)) + ".*"
         for name in self._champ_list:
             if re.fullmatch(pattern, name.lower()):
                 result.append(name)
         result = self.apply_filters(result, self.filters)
         self.number_of_sorted = f"{len(result)}/171"
+        self.filtered_paths = result.copy()
+        for i in range(len(self.filtered_paths)):
+            self.filtered_paths[i] = f"../../resources/img/{self.filtered_paths[i]}_0.jpg"
         return result

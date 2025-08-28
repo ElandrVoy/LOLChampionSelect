@@ -404,7 +404,7 @@ Page {
                 height: 34
                 anchors.centerIn: parent
 
-                onClicked: aboba.animateRandomSelection()
+                onClicked: aboba.randomSelection()
             }
         }
     }
@@ -427,12 +427,6 @@ Page {
             RandomImageSelector {
                 id: aboba
                 Layout.alignment: Layout.Center
-                imageList: [
-                    "../../resources/img/Aatrox_0.jpg",
-                    "../../resources/img/Akali_0.jpg",
-                    "../../resources/img/Ahri_0.jpg",
-                    "../../resources/img/Brand_0.jpg"
-                ]
             }
 
         }
