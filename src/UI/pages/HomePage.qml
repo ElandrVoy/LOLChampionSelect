@@ -34,63 +34,27 @@ Page {
             boundsBehavior: Flickable.StopAtBounds
             bottomMargin: 20
 
-            Frame {
-                width: parent.width
-                height: parent.calcContentHeight
-                background: Rectangle {
-                    color: "transparent"
-                    border.color: "red"
-                    border.width: 0  // Убедитесь, что граница отключена
-                }
-
-                Grid {
-                    id: gridChampions
-                    // anchors.fill: parent
-                    width: parent.width
-                    height: parent.height
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    property real minWidth: 120
-        
-                    readonly property int calcColumns: {
-                        var itemsInRow = width / (minWidth)
-                        return Math.max(1, Math.floor(itemsInRow))
-                    }
-                    
-                    columns: calcColumns
-                    // spacing: 0
-                    // padding: 0
-                    leftPadding: ((width - (minWidth * calcColumns)) / 2) - vbar.width
-                    property var ids: searchField.searchResultList
-                    property var names: []
-
-                    Repeater {
-                        id: rep
-                        model: gridChampions.ids.length                
-
-                        ChampionItem {
-                            imageName: gridChampions.ids[index]
-                            
-                            Component.onCompleted: {
-                                appearAnim.start();
-                            }
-
-                            ParallelAnimation {
-                                id: appearAnim
-                                NumberAnimation {
-                                    target: parent
-                                    property: "opacity"
-                                    from: 0; to: 1
-                                    duration: 600
-                                    easing.type: Easing.OutQuad
-
-                                    Component.onCompleted: {
-                                        appearAnim.start();
-                                    }
-                                }  
-                            }
-                        }
+            Component {
+                id: contactDelegate
+                Item {
+                    width: grid.cellWidth; height: grid.cellHeight
+                    Column {
+                        anchors.fill: parent
+                        Image { source: icon; anchors.horizontalCenter: parent.horizontalCenter }
+                        Text { text: name; anchors.horizontalCenter: parent.horizontalCenter }
                     }
                 }
+            }
+
+            GridView {
+                id: grid
+                anchors.fill: parent
+                cellWidth: 120; cellHeight: 120* 1.1
+
+                model: ChampModel {}
+                delegate: contactDelegate
+                highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
+                focus: true
             }
             
 
